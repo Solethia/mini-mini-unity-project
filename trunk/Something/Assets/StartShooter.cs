@@ -40,7 +40,7 @@ private bool spent = false;
 			
 			float shoot = launcher.GetSliderpos() * maxshoot;
 			rigidbody.AddForce(shoot, shoot, 0f, ForceMode.Impulse);
-			Debug.Log("Input godkendt!");
+			Debug.Log(shoot);
 		}
 		Camera.main.transform.localPosition = Vector3.Lerp(Camera.main.transform.localPosition, target, Time.deltaTime*0.4f);
 		
